@@ -142,7 +142,6 @@ const Home = () => {
         </div>
       </section>
 
-      <div style={{ background: '#ff0000', color: 'white', padding: '20px', textAlign: 'center', fontSize: '24px', fontWeight: 'bold' }}>TEST VERSION - IF YOU SEE THIS, THE DEPLOY IS WORKING!</div>
       <section style={{ padding: '100px 0', background: '#f8faff' }}>
         <div className="container">
           <div style={{ textAlign: 'center', maxWidth: '800px', margin: '0 auto 70px' }}>
