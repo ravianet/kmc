@@ -1,0 +1,508 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.header {
+    background: #fff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px 20px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 50px;
+    width: auto;
+    object-fit: contain;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    align-items: center;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #2563eb;
+}
+
+.cta-button {
+    background: #2563eb;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.3s;
+}
+
+.cta-button:hover {
+    background: #1d4ed8;
+}
+
+.hero {
+    background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.hero-subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    opacity: 0.9;
+}
+
+.hero-description {
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+    opacity: 0.85;
+}
+
+.hero-features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+}
+
+.feature-icon {
+    font-size: 1.2rem;
+}
+
+.hero-cta {
+    display: inline-block;
+    background: white;
+    color: #1e3a8a;
+    padding: 15px 40px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.1rem;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.hero-cta:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+section {
+    padding: 80px 20px;
+}
+
+section h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #1e3a8a;
+}
+
+.section-intro {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 50px;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.testimonial-card {
+    background: #f8fafc;
+    padding: 30px;
+    border-radius: 12px;
+    border-left: 4px solid #2563eb;
+}
+
+.solution-section {
+    background: #f0f9ff;
+    text-align: center;
+}
+
+.solution-highlight {
+    margin: 50px 0;
+}
+
+.highlight-number {
+    font-size: 4rem;
+    font-weight: 800;
+    color: #2563eb;
+}
+
+.secondary {
+    background: transparent;
+    border: 2px solid #2563eb;
+    color: #2563eb;
+}
+
+.secondary:hover {
+    background: #2563eb;
+    color: white;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.service-card {
+    background: white;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    transition: transform 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+.service-card h3 {
+    color: #1e3a8a;
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+}
+
+.steps-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.step-card {
+    text-align: center;
+    padding: 40px 25px;
+}
+
+.step-number {
+    font-size: 3rem;
+    font-weight: 800;
+    color: #2563eb;
+    margin-bottom: 20px;
+}
+
+.step-card h3 {
+    margin-bottom: 15px;
+    color: #1e3a8a;
+}
+
+.app-section {
+    background: #f8fafc;
+}
+
+.app-section p {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 40px;
+    font-size: 1.1rem;
+}
+
+.app-features {
+    max-width: 600px;
+    margin: 0 auto;
+    list-style: none;
+}
+
+.app-features li {
+    padding: 15px 0;
+    border-bottom: 1px solid #e5e7eb;
+    font-size: 1.05rem;
+}
+
+.app-features li:before {
+    content: "✓ ";
+    color: #2563eb;
+    font-weight: bold;
+}
+
+.why-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    margin-top: 50px;
+}
+
+.why-card {
+    padding: 30px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.06);
+}
+
+.why-card h3 {
+    color: #1e3a8a;
+    margin-bottom: 15px;
+}
+
+.coverage-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 40px;
+}
+
+.coverage-item {
+    background: #e0e7ff;
+    color: #1e3a8a;
+    padding: 12px 25px;
+    border-radius: 25px;
+    font-weight: 500;
+}
+
+.plans-section {
+    background: #f8fafc;
+}
+
+.plans-intro {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 50px;
+    font-size: 1.1rem;
+}
+
+.plans-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.plan-card {
+    background: white;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    text-align: center;
+    position: relative;
+}
+
+.plan-card.popular {
+    transform: scale(1.05);
+    border: 3px solid #2563eb;
+}
+
+.popular-badge {
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #2563eb;
+    color: white;
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.plan-card h3 {
+    font-size: 1.8rem;
+    color: #1e3a8a;
+    margin-bottom: 15px;
+}
+
+.plan-price {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #2563eb;
+    margin-bottom: 30px;
+}
+
+.plan-price span {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #666;
+}
+
+.plan-features {
+    list-style: none;
+    margin-bottom: 35px;
+    text-align: left;
+}
+
+.plan-features li {
+    padding: 12px 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.plan-button {
+    display: inline-block;
+    width: 100%;
+    background: #2563eb;
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.3s;
+}
+
+.plan-button:hover {
+    background: #1d4ed8;
+}
+
+.cta-section {
+    background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+    color: white;
+}
+
+.cta-section h2 {
+    color: white;
+}
+
+.cta-section p {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 40px;
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+.form-button {
+    background: white;
+    color: #1e3a8a;
+    padding: 18px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.form-button:hover {
+    transform: translateY(-2px);
+}
+
+.footer {
+    background: #1f2937;
+    color: white;
+    padding: 60px 20px 30px;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.footer-logo-img {
+    height: 60px;
+    width: auto;
+    margin-bottom: 15px;
+}
+
+.footer-links ul {
+    list-style: none;
+}
+
+.footer-links a {
+    color: #9ca3af;
+    text-decoration: none;
+    line-height: 2;
+}
+
+.footer-links a:hover {
+    color: white;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 30px;
+    border-top: 1px solid #374151;
+    color: #9ca3af;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+    
+    .hero h1 {
+        font-size: 2rem;
+    }
+    
+    .plan-card.popular {
+        transform: none;
+    }
+    
+    section h2 {
+        font-size: 1.8rem;
+    }
+}
