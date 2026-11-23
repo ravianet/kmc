@@ -142,7 +142,43 @@ const Home = () => {
         </div>
       </section>
 
-      <section id="how" style={{ padding: '100px 0', background: '#f8faff' }}>
+      <section style={{ padding: '100px 0', background: '#f8faff' }}>
+        <div className="container">
+          <div style={{ textAlign: 'center', maxWidth: '800px', margin: '0 auto 70px' }}>
+            <h2 style={{ fontSize: 'clamp(2.5rem, 5vw, 4rem)', marginBottom: '20px', lineHeight: '1.15', fontWeight: 800, color: '#0a192f' }}>Custom Pricing Based On Your Land</h2>
+            <p style={{ fontSize: '1.15rem', lineHeight: '1.6', color: '#4a5568' }}>
+              Every property is unique. We provide personalized quotes based on your land area, location, and specific protection requirements.
+            </p>
+          </div>
+          
+          <div className="card" style={{ padding: '60px', border: '2px solid transparent', background: 'linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)) padding-box, linear-gradient(135deg, #0a192f20, #61dafb20) border-box', borderRadius: '20px', boxShadow: '0 15px 45px rgba(0,0,0,0.08)', backdropFilter: 'blur(10px)' }}>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '32px', marginBottom: '40px' }}>
+              {[
+                { icon: <MapPin size={32} />, title: 'Land Area', desc: 'Total acreage or square footage of your property' },
+                { icon: <Camera size={32} />, title: 'Location Details', desc: 'Rural, urban, suburban, proximity to development' },
+                { icon: <Eye size={32} />, title: 'Surveillance Needs', desc: 'Frequency of visits, drone coverage, alarm systems' },
+                { icon: <Scale size={32} />, title: 'Legal Requirements', desc: 'Title monitoring, encroachment protection, documentation' }
+              ].map((item, i) => (
+                <div key={i} style={{ textAlign: 'center' }}>
+                  <div style={{ width: '70px', height: '70px', borderRadius: '16px', background: 'linear-gradient(135deg, #0a192f15, #61dafb15)', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '18px' }}>
+                    <div style={{ color: '#61dafb' }}>{item.icon}</div>
+                  </div>
+                  <h4 style={{ marginBottom: '10px', fontSize: '1.2rem', color: '#0a192f' }}>{item.title}</h4>
+                  <p style={{ color: '#4a5568', fontSize: '1rem', lineHeight: '1.6' }}>{item.desc}</p>
+                </div>
+              ))}
+            </div>
+            
+            <div style={{ textAlign: 'center' }}>
+              <Link to="/contact" className="btn" style={{ background: 'linear-gradient(135deg, #0a192f, #61dafb)', color: 'white', padding: '24px 60px', fontSize: '1.3rem', fontWeight: 700, boxShadow: '0 15px 45px rgba(0,0,0,0.25)', borderRadius: '8px', transition: 'all 0.3s ease' }}>
+                Get Your Custom Quote
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="how" style={{ padding: '100px 0', background: '#ffffff' }}>
         <div className="container">
           <div style={{ textAlign: 'center', maxWidth: '800px', margin: '0 auto 70px' }}>
             <h2 style={{ fontSize: 'clamp(2.5rem, 5vw, 4rem)', marginBottom: '20px', lineHeight: '1.15', fontWeight: 800, color: '#0a192f' }}>How It All Works</h2>
@@ -191,42 +227,6 @@ const Home = () => {
         </div>
       </section>
 
-      <section style={{ padding: '100px 0', background: '#f8faff' }}>
-        <div className="container">
-          <div style={{ textAlign: 'center', maxWidth: '800px', margin: '0 auto 70px' }}>
-            <h2 style={{ fontSize: 'clamp(2.5rem, 5vw, 4rem)', marginBottom: '20px', lineHeight: '1.15', fontWeight: 800, color: '#0a192f' }}>Simple, Transparent Pricing</h2>
-            <p style={{ fontSize: '1.15rem', lineHeight: '1.6', color: '#4a5568' }}>No hidden fees, no long-term lock-ins. Choose what fits your plot.</p>
-          </div>
-          
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '32px', maxWidth: '1000px', margin: '0 auto' }}>
-            {[
-              { name: 'Starter Guard', price: '₹7,499', period: '6 months', features: ['Bi-monthly field visits', 'Photo-only reports', 'Basic alert system', 'Email support'], popular: false },
-              { name: 'Full Shield', price: '₹14,999', period: '12 months', features: ['Weekly verified inspections', 'Ground + drone footage', 'AI boundary monitoring', 'WhatsApp + SMS alerts', 'Priority response team', 'Document vault access'], popular: true },
-              { name: 'Elite Protection', price: 'Custom', period: 'Tailored', features: ['Dedicated field officer', '24/7 surveillance', 'Legal retainer included', 'Monthly market reports', 'Unlimited document storage', 'VIP phone support'], popular: false }
-            ].map((plan, i) => (
-              <div key={i} className="card" style={{ position: 'relative', padding: '40px', border: plan.popular ? '3px solid transparent' : '1px solid rgba(0, 0, 0, 0.1)', background: plan.popular ? 'linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)) padding-box, linear-gradient(135deg, #0a192f, #61dafb) border-box' : 'rgba(255, 255, 255, 0.7)', transform: plan.popular ? 'scale(1.05)' : 'none', borderRadius: '16px', boxShadow: plan.popular ? '0 15px 45px rgba(0,0,0,0.1)' : '0 10px 30px rgba(0,0,0,0.05)', backdropFilter: 'blur(10px)' }}>
-                {plan.popular && (
-                  <div style={{ position: 'absolute', top: '-16px', left: '50%', transform: 'translateX(-50%)', background: 'linear-gradient(135deg, #0a192f, #61dafb)', color: 'white', padding: '6px 20px', borderRadius: '50px', fontSize: '0.85rem', fontWeight: 600 }}>Most Popular</div>
-                )}
-                <h3 style={{ marginBottom: '10px', fontSize: '1.4rem', color: '#0a192f' }}>{plan.name}</h3>
-                <div style={{ fontSize: '3rem', fontWeight: 800, marginBottom: '10px', background: 'linear-gradient(135deg, #0a192f, #61dafb)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>{plan.price}</div>
-                <p style={{ color: '#4a5568', marginBottom: '32px', fontSize: '1.05rem' }}>{plan.period}</p>
-                <ul style={{ listStyle: 'none', marginBottom: '32px', padding: 0 }}>
-                  {plan.features.map((f, j) => (
-                    <li key={j} style={{ display: 'flex', gap: '12px', alignItems: 'center', marginBottom: '14px' }}>
-                      <CheckCircle size={20} color="#61dafb" />
-                      <span style={{ fontSize: '1.05rem', color: '#4a5568' }}>{f}</span>
-                    </li>
-                  ))}
-                </ul>
-                <Link to="/signup" className="btn btn-primary" style={{ width: '100%', padding: '14px 0', fontSize: '1.05rem', background: 'linear-gradient(135deg, #0a192f, #61dafb)', color: 'white', borderRadius: '8px' }}>
-                  Get Started
-                </Link>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       <section style={{ padding: '100px 0', background: '#ffffff' }}>
         <div className="container">

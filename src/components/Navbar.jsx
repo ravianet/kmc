@@ -26,7 +26,7 @@ const Navbar = ({ isAuthenticated, user, logout }) => {
           <Link to="/" style={{ textDecoration: 'none', fontWeight: 600, color: '#2d3748', fontSize: '1.1rem', padding: '10px 18px', borderRadius: '10px', transition: 'all 0.3s ease', position: 'relative' }}>Home</Link>
           <Link to="/about" style={{ textDecoration: 'none', fontWeight: 600, color: '#2d3748', fontSize: '1.1rem', padding: '10px 18px', borderRadius: '10px', transition: 'all 0.3s ease', position: 'relative' }}>About Us</Link>
           <Link to="/services" style={{ textDecoration: 'none', fontWeight: 600, color: '#2d3748', fontSize: '1.1rem', padding: '10px 18px', borderRadius: '10px', transition: 'all 0.3s ease', position: 'relative' }}>Services</Link>
-          <Link to="/pricing" style={{ textDecoration: 'none', fontWeight: 600, color: '#2d3748', fontSize: '1.1rem', padding: '10px 18px', borderRadius: '10px', transition: 'all 0.3s ease', position: 'relative' }}>Pricing</Link>
+
           <Link to="/contact" style={{ textDecoration: 'none', fontWeight: 600, color: '#2d3748', fontSize: '1.1rem', padding: '10px 18px', borderRadius: '10px', transition: 'all 0.3s ease', position: 'relative', marginRight: '16px' }}>Contact Us</Link>
           {!isAuthenticated ? (
             <>
@@ -55,7 +55,7 @@ const Navbar = ({ isAuthenticated, user, logout }) => {
           <Link to="/" onClick={() => setMobileMenuOpen(false)} style={{ textDecoration: 'none', fontWeight: 600, color: '#2d3748', padding: '14px 16px', fontSize: '1.2rem', borderRadius: '10px', transition: 'all 0.3s ease' }}>Home</Link>
           <Link to="/about" onClick={() => setMobileMenuOpen(false)} style={{ textDecoration: 'none', fontWeight: 600, color: '#2d3748', padding: '14px 16px', fontSize: '1.2rem', borderRadius: '10px', transition: 'all 0.3s ease' }}>About Us</Link>
           <Link to="/services" onClick={() => setMobileMenuOpen(false)} style={{ textDecoration: 'none', fontWeight: 600, color: '#2d3748', padding: '14px 16px', fontSize: '1.2rem', borderRadius: '10px', transition: 'all 0.3s ease' }}>Services</Link>
-          <Link to="/pricing" onClick={() => setMobileMenuOpen(false)} style={{ textDecoration: 'none', fontWeight: 600, color: '#2d3748', padding: '14px 16px', fontSize: '1.2rem', borderRadius: '10px', transition: 'all 0.3s ease' }}>Pricing</Link>
+
           <Link to="/contact" onClick={() => setMobileMenuOpen(false)} style={{ textDecoration: 'none', fontWeight: 600, color: '#2d3748', padding: '14px 16px', fontSize: '1.2rem', borderRadius: '10px', transition: 'all 0.3s ease' }}>Contact Us</Link>
           {!isAuthenticated ? (
             <>

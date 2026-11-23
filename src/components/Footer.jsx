@@ -19,7 +19,7 @@ const Footer = () => {
               <li style={{ marginBottom: '12px' }}><Link to="/" style={{ color: '#94a3b8', textDecoration: 'none' }}>Home</Link></li>
               <li style={{ marginBottom: '12px' }}><Link to="/about" style={{ color: '#94a3b8', textDecoration: 'none' }}>About Us</Link></li>
               <li style={{ marginBottom: '12px' }}><Link to="/services" style={{ color: '#94a3b8', textDecoration: 'none' }}>Services</Link></li>
-              <li style={{ marginBottom: '12px' }}><Link to="/pricing" style={{ color: '#94a3b8', textDecoration: 'none' }}>Pricing</Link></li>
+
               <li style={{ marginBottom: '12px' }}><Link to="/blog" style={{ color: '#94a3b8', textDecoration: 'none' }}>Blog</Link></li>
               <li style={{ marginBottom: '12px' }}><Link to="/contact" style={{ color: '#94a3b8', textDecoration: 'none' }}>Contact Us</Link></li>
             </ul>
