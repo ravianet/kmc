@@ -5,7 +5,11 @@ cd /d "%~dp0"
 set "GIT=git"
 where git >nul 2>&1
 if errorlevel 1 (
-    if exist "%ProgramFiles%\Git\cmd\git.exe" (
+    if exist "c:\git\cmd\git.exe" (
+        set "GIT=c:\git\cmd\git.exe"
+    ) else if exist "c:\git\bin\git.exe" (
+        set "GIT=c:\git\bin\git.exe"
+    ) else if exist "%ProgramFiles%\Git\cmd\git.exe" (
         set "GIT=%ProgramFiles%\Git\cmd\git.exe"
     ) else (
         echo Error: Git was not found. Install Git or add it to PATH.
