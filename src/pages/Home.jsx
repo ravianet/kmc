@@ -145,7 +145,7 @@ const Home = () => {
       <section style={{ padding: '100px 0', background: '#f8faff' }}>
         <div className="container">
           <div style={{ textAlign: 'center', maxWidth: '800px', margin: '0 auto 70px' }}>
-            <h2 style={{ fontSize: 'clamp(2.5rem, 5vw, 4rem)', marginBottom: '20px', lineHeight: '1.15', fontWeight: 800, color: '#0a192f' }}>Custom Pricing Based On Your Land</h2>
+            <h2 style={{ fontSize: 'clamp(2.5rem, 5vw, 4rem)', marginBottom: '20px', lineHeight: '1.15', fontWeight: 800, color: '#0a192f' }}>Custom Pricing Based On Your Unique Land</h2>
             <p style={{ fontSize: '1.15rem', lineHeight: '1.6', color: '#4a5568' }}>
               Every property is unique. We provide personalized quotes based on your land area, location, and specific protection requirements.
             </p>
