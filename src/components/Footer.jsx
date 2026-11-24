@@ -7,7 +7,8 @@ const Footer = () => {
       <div className="container">
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: '48px', marginBottom: '60px' }}>
           <div>
-            <img src="/kmc-logo.png" alt="KMC" style={{ height: '60px', marginBottom: '12px', objectFit: 'contain', filter: 'invert(1) drop-shadow(0 4px 12px rgba(30, 64, 175, 0.3))' }} />
+            <img src="/kmc-logo.png" alt="KMC" style={{ height: '60px', marginBottom: '12px', objectFit: 'contain', filter: 'drop-shadow(0 4px 12px rgba(30, 64, 175, 0.3))' }} />
+            <h3 style={{ color: 'white', marginBottom: '8px', fontSize: '1.2rem', fontWeight: 700 }}>KMCGROUP</h3>
             <p style={{ fontSize: '0.85rem', color: '#94a3b8', marginBottom: '16px', fontWeight: 600, letterSpacing: '1px' }}>LAND PROTECTION • 24/7 GUARD</p>
             <p style={{ color: '#94a3b8', lineHeight: '1.7' }}>
               Your trusted partner for land protection, field surveillance, and legal security across India. We keep your land safe — 24/7.
